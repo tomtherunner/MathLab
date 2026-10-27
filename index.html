@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="description" content="Procvičování malé násobilky" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="MathLab" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" type="image/svg+xml" href="/mathlab.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>MathLab – Procvičování malé násobilky</title>
+  </head>
+  <body>
+    <main id="app">
+      <header class="page-header">
+        <p class="eyebrow">Matematika může být zábava</p>
+        <h1>MathLab</h1>
+        <p class="subtitle">Procvičování malé násobilky</p>
+      </header>
+
+      <div class="exercise-sections">
+        <section class="exercise-card" aria-labelledby="multiplication-heading">
+          <h2 id="multiplication-heading">Násobení</h2>
+          <div class="problem-list" id="multiplication-list"></div>
+        </section>
+
+        <section class="exercise-card" aria-labelledby="division-heading">
+          <h2 id="division-heading">Dělení</h2>
+          <div class="problem-list" id="division-list"></div>
+        </section>
+      </div>
+
+      <section class="results" aria-label="Průběh cvičení">
+        <p id="progress" class="progress" aria-live="polite" aria-atomic="true"></p>
+        <p id="completion" class="completion" aria-live="polite" aria-atomic="true"></p>
+      </section>
+
+      <div class="actions">
+        <button id="check-answers" class="button button-primary" type="button">Zkontrolovat</button>
+        <button id="new-round" class="button button-secondary" type="button">Nové příklady</button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
